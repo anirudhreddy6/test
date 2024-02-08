@@ -25,4 +25,4 @@ workdir /root
 COPY --from=builder /app/hello .
 
 #Run the Binary
-CMD ["./hello"]
+CMD ["/root/hello"]
