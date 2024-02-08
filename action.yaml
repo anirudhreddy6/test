@@ -1,0 +1,7 @@
+#github action details
+name: 'Hello'
+description: 'Hello World'
+author: 'Anirudh Reddy'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
