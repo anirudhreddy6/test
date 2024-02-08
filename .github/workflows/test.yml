@@ -1,0 +1,13 @@
+name: "test the githubaction"
+on : [push]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    name: 'Run the hello action'
+    steps:
+    - name: 'Checkout the code'
+      uses: actions/checkout@v2
+    - name: 'Run the hello action'
+      uses: anirudhreddy6/test@main
+      
