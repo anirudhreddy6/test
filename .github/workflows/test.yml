@@ -5,9 +5,9 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     name: 'Run the hello action'
+    if: github.event_name == 'workflow_dispatch'
     steps:
     - name: 'Checkout the code'
       uses: actions/checkout@v2
     - name: 'Run the hello action'
       uses: anirudhreddy6/test@main
-      
