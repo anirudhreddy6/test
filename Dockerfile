@@ -13,7 +13,7 @@ COPY . ./
 #Build the application
 #-o hello specifies the output file name hello
 #disabling cgo and target os is linux
-RUN CGO_ENABLED=0 GOOS=linux go build -o hello
+RUN CGO_ENABLED=0 GOOS=linux go build -v -o hello .
 
 #use the official debian for lean image
 FROM debian:buster-slim
