@@ -5,7 +5,7 @@ workdir /app
 
 #Retrieve the dependencies
 COPY go.* ./
-RUN go mod tidy
+RUN if [ -f go.mod]; then go tidy; fi
 
 #Copy the source code
 COPY . ./
